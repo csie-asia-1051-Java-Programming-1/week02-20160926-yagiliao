@@ -6,10 +6,18 @@ public class hw03_105021039 {
 		// TODO Auto-generated method stub
 		Scanner scr=new Scanner(System.in);
 		int a=scr.nextInt();
-		if(a%4==0 && a%100!=0 && a%400==0){
+		if(a%4==0){
 			System.out.print("是潤年");
 		}else{
-			System.out.print("不是潤年");
+			if(a%100==0){
+				System.out.print("是平年");
+			}else{
+				if(a%400==0){
+					System.out.print("是潤年");
+				}else{
+					System.out.print("是平年");
+				}
+			}
 		}
 	}
 
